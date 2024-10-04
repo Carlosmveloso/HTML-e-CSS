@@ -6,20 +6,19 @@
     <title>Flex-box</title>
     <Style>
         div.container{
-            height: 500px;
+            height: 400px;
             background-color: lightsalmon;
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: center; /*Alinhar os itens de acordo com o main axis*/
-            align-items: center; /*Alinhar os itens de acordo com o cross axis*/
-            /*Só se usa align-items quando quando se usa nowrap*/
+            flex-flow: row wrap;
+            align-content: flex-start;/*Só se usa align-content quando se usa wrap*/
+            /*O align-content alinha os itens de acordo com o cross axis*/
         }
         div.item{
             background-color: lightskyblue;
             border: 1px solid black;
-            align-items: center;
-            padding: 10px;
-            margin: 10px;
+            text-align: center;
+            padding: 40px;
+
         }
     </Style>
 </head>
